@@ -118,6 +118,9 @@ body {
 	display: flex;
 	border-top: 1px solid rgba(210,210,210,0.4);
 }
+.panel-list-message-contact:hover {
+	background-color: rgba(0,0,0,0.2);
+}
 .panel-list-message-contact .profile-img {
 	padding: 13px 10px 10px 10px;
 }
@@ -147,7 +150,8 @@ body {
 	line-height: 14px;
 }
 .message-text .message-text-detail .message-hour {
-	color: #C8C8C8;
+	/*color: #C8C8C8;*/
+	color: grey;
 	font-size: 14px;
 }
 .message-text .message-chat {
@@ -181,7 +185,7 @@ body {
 	display: flex;
 	display:-webkit-flex;
 	display:-ms-flexbox;
-  justify-content: center;
+	justify-content: center;
 	justify-content: space-between;
 	padding-left: 10px;
 	width: 100%;
@@ -195,6 +199,28 @@ body {
 	text-decoration:none;
 	font-size: 22px;
 	margin: 0 10px;
+}
+.panel-chat-message .icon:hover{
+	color: rgb(215,155,0);
+	border-radius: 100%;
+}
+.panel-chat-message .emoticons-list {
+	display: none;
+	background-color: white;
+	position: absolute;
+	list-style: none;
+	bottom: 55px;
+	width: auto;
+	border-radius: 8px;
+	padding: 1%;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.emoticons-list .imgIcon {
+	width: 25px;
+	height: 25px;
+}
+.emoticons-list li {
+    display: inline-block;
 }
 .panel-chat-detail .name-group {
 	color: #454545;

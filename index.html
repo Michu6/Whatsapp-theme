@@ -7,9 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="image/favicon.png" type="image/png">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/icomoon.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/queries.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	</head>
 	<body>
 		<div id="app">
@@ -28,7 +30,7 @@
 						<button class="panel-icon-search">
 						<div class="icon icon-search"></div>
 						</button>
-						<input type="search" placeholder="Buscar o empezar un chat nuevo"></input>
+						<input id ="inputSearch" type="search" placeholder="Buscar o empezar un chat nuevo"></input>
 					</div>
 					<div class="panel-contact-chat scroll-bar">
 						<div class="panel-list-message-contact">
@@ -73,7 +75,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="panel-list-message-contact">
+						<!-- <div class="panel-list-message-contact">
 							<div class="profile-img">
 								<img src="image/anamaria.jpg"/>
 							</div>
@@ -170,7 +172,7 @@
 									<p class="show-dots">Feliz año!</p>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div class="panel-list-message-contact">
 							<div class="profile-img">
 								<img src="image/karen.jpg"/>
@@ -234,7 +236,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="message-user-right">
+<!-- 							<div class="message-user-right">
 								<div class="message-user">
 									<div class="text-author">Ahora si está decente</div>
 									<div class="bubble-chat-hour">
@@ -269,16 +271,32 @@
 								<div class="bubble-chat-hour">
 									<span class="chat-hour">11:31</span>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<div class="panel-chat-message">
-						<button class="icon-insert_emoticon icon"></button>
-						<input type="text" placeholder="Escribe tu mensaje aquí"></input>
+						<div class="emoticon">
+							<button class="icon-insert_emoticon icon"></button>
+							<div class="emoticons-list">
+								<li><img class="imgIcon" src="image/ico_ena.png"/></li>
+								<li><img class="imgIcon" src="image/ico_lentes.png"/></li>
+								<li><img class="imgIcon" src="image/ico_lloron.png"/></li>
+								<li><img class="imgIcon" src="image/ico_risa.png"/></li>
+								<li><img class="imgIcon" src="image/ico_rubor.png"/></li>
+								<li><img class="imgIcon" src="image/ico_moni.png"/></li>
+								<li><img class="imgIcon" src="image/ico_uni.png"/></li>
+							</div>
+							<!-- <button class="icon-insert_emoticon icon" data-toggle="popover" title="" data-placement="top" data-content=":3" data-original-title="Tus emojis <button class='btn'>dofodf</button"></button> -->
+						</div>
+						<input class="yourMessage" type="text" placeholder="Escribe tu mensaje aquí y ENTER para mandarlo"></input>
 						<button class="icon-mic icon"></button>
 					</div>
 				</div>
 			</div>
 		</div>
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

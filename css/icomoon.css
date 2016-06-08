@@ -51,3 +51,6 @@
 	content: "\e906"
 }
 
+.icon-cancel-circle:before {
+    content: "\e904";
+}
